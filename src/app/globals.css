@@ -3,25 +3,41 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  font-size: 62.5%;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-size: 1.75rem;
+
+  @apply tw-text-textColor
+  /* tw-text-lg; */;
+}
+
+@layer base {
+  h2 {
+    @apply tw-font-openSans tw-text-6xl tw-text-pry tw-mb-14;
+  }
+  input,
+  textarea {
+    @apply tw-outline-none;
+  }
+}
+
+@layer components {
+  .tw-btn {
+    @apply tw-transition-colors tw-duration-300 tw-px-7 tw-py-4 tw-text-white tw-rounded-md;
+  }
+  .parag {
+    /* @apply tw-leading-7 */
+    line-height: 2.2em;
+  }
+}
+
+@layer utilities {
+  .tw-flex-center {
+    @apply tw-flex tw-items-center tw-justify-center;
+  }
+  /* .contact-bg-image {
+    backgroundImage: 
+  } */
 }
