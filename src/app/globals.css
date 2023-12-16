@@ -25,7 +25,13 @@ body {
 
 @layer components {
   .tw-btn {
-    @apply tw-transition-colors tw-duration-300 tw-px-7 tw-py-4 tw-text-white tw-rounded-md;
+    @apply tw-flex-center tw-min-w-fit tw-text-center tw-transition-colors tw-duration-300 tw-px-7 tw-py-4 tw-rounded-md;
+  }
+  .tw-btn-pry {
+    @apply tw-btn tw-bg-pry tw-text-white hover:tw-bg-pryDark;
+  }
+  .tw-simple-link {
+    @apply hover:tw-text-pry;
   }
   .parag {
     /* @apply tw-leading-7 */

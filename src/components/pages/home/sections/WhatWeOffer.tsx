@@ -19,15 +19,15 @@ const WhatWeOffer = () => {
         </>
       }
     >
-      <ul>
+      <ul className="tw-flex tw-flex-col tw-gap-44 md:tw-gap-5">
         {services.map((service, i) => {
           const shouldReverse = i % 2;
           const needsTopSpace = [2, 3, 4, 5];
           return (
             <li
               className={cls(
-                'tw-flex tw-items-center tw-gap-14',
-                shouldReverse && 'tw-flex-row-reverse',
+                'tw-flex tw-flex-col md:tw-flex-row tw-items-center tw-gap-5 tabLand:tw-gap-14 tw-text-center md:tw-text-left',
+                shouldReverse && 'tw-flex-col md:tw-flex-row-reverse',
                 needsTopSpace.includes(i) && 'tw-mt-14'
               )}
             >

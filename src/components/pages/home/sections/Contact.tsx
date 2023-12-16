@@ -4,13 +4,10 @@ import Image from 'next/image';
 
 const Contact = () => {
   return (
-    <HomeSection title="Send us a Message">
-      <div className="tw-shadow-xl tw-flex tw-flex-col tablet:tw-flex-row tw-rounded-3xl tw-overflow-hidden tw-max-w-4x tw-mx-auto">
+    <HomeSection title="Have a Message for Us?">
+      <div className="tw-shadow-xl tw-flex tw-flex-col md:tw-flex-row tw-rounded-3xl tw-overflow-hidden tw-max-w-4x tw-mx-auto">
         {/* bg-gray-200 */}
-        <figure
-          className="tw-bg-white tw-flex-1 tw-flex-center"
-          // style={{ backgroundImage: "url('/img/restaurant.jpg')" }}
-        >
+        <figure className="tw-hidden md:tw-flex-center tw-bg-gray-200 tw-flex-1">
           <Image
             src="/img/datafied-logo.png"
             width={200}
@@ -23,22 +20,22 @@ const Contact = () => {
           <input
             type="text"
             placeholder="Your First Name"
-            className="tw-bg-white/30 focus:tw-bg-white/40 placeholder:tw-text-white/50 tw-text-white tw-rounded-md tw-py-3 tw-px-5"
+            className="tw-col-span-2 phone:tw-col-span-1 tw-bg-white/30 focus:tw-bg-white/40 placeholder:tw-text-white/50 tw-text-white tw-rounded-md tw-py-3 tw-px-5"
           />
           <input
             type="text"
             placeholder="Your Last Name"
-            className="tw-bg-white/30 focus:tw-bg-white/40 placeholder:tw-text-white/50 tw-text-white tw-rounded-md tw-py-3 tw-px-5"
+            className="tw-col-span-2 phone:tw-col-span-1 tw-bg-white/30 focus:tw-bg-white/40 placeholder:tw-text-white/50 tw-text-white tw-rounded-md tw-py-3 tw-px-5"
           />
           <input
             type="email"
             placeholder="Your Email"
-            className="tw-bg-white/30 focus:tw-bg-white/40 placeholder:tw-text-white/50 tw-text-white tw-rounded-md tw-py-3 tw-px-5"
+            className="tw-col-span-2 phone:tw-col-span-1 tw-bg-white/30 focus:tw-bg-white/40 placeholder:tw-text-white/50 tw-text-white tw-rounded-md tw-py-3 tw-px-5"
           />
           <input
             type="tel"
             placeholder="Your Mobile Number"
-            className="tw-bg-white/30 focus:tw-bg-white/40 placeholder:tw-text-white/50 tw-text-white tw-rounded-md tw-py-3 tw-px-5"
+            className="tw-col-span-2 phone:tw-col-span-1 tw-bg-white/30 focus:tw-bg-white/40 placeholder:tw-text-white/50 tw-text-white tw-rounded-md tw-py-3 tw-px-5"
           />
           <textarea
             name=""
