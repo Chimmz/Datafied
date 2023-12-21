@@ -7,11 +7,11 @@ import { Icon } from '@iconify/react/dist/iconify.js';
 import Link from 'next/link';
 
 const Header = () => {
-  /* #f7f7f7 fff3ed*/
+  /* #f7f7f7 fff3ed fff1e8*/
   return (
     <HomeSection
       as="header"
-      className="tw-bg-[#fff3ed] tw-min-h-[80vh] tw-grid tw-place-items-center"
+      className="tw-bg-[#fff8f3] tw-min-h-[80vh] tw-grid tw-place-items-center"
       containerClassName="tw-flex tw-flex-col tw-text-center tw-items-center tw-gap-20 tabPort:tw-flex-row tabPort:tw-text-left tabPort:tw-items-start"
     >
       <div className="tw-max-w-[70ch] tabPort:tw-max-w-[40ch]">

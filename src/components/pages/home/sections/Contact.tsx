@@ -1,22 +1,28 @@
-import React from 'react';
+'use client';
+import React, { FormEventHandler } from 'react';
 import HomeSection from '.';
 import Image from 'next/image';
+import AppForm from '@/components/clients/AppForm';
 
-const Contact = () => {
+const Contact = function () {
+  const sendMessage = () => {};
+
   return (
     <HomeSection title="Have a Message for Us?">
       <div className="tw-shadow-xl tw-flex tw-flex-col md:tw-flex-row tw-rounded-3xl tw-overflow-hidden tw-max-w-4x tw-mx-auto">
-        {/* bg-gray-200 */}
-        <figure className="tw-hidden md:tw-flex-center tw-bg-gray-200 tw-flex-1">
+        <figure className="tw-hidden md:tw-flex-center tw-bg-[#f8f8f8] tw-flex-1">
           <Image
             src="/img/datafied-logo.png"
-            width={200}
-            height={200}
+            width={150}
+            height={150}
             alt="Datafied Logo"
           />
         </figure>
 
-        <form className="tw-bg-gradient-to-bl tw-from-[#FF5C00] tw-to-pry tw-flex-1 tw-grid tw-grid-cols-2 tw-gap-7 tw-p-12">
+        <AppForm
+          className="tw-bg-gradient-to-bl tw-from-[#FF5C00] tw-to-pry tw-flex-1 tw-grid tw-grid-cols-2 tw-gap-7 tw-p-12"
+          onSubmit={sendMessage}
+        >
           <input
             type="text"
             placeholder="Your First Name"
@@ -47,11 +53,11 @@ const Contact = () => {
           ></textarea>
           <button
             className="tw-col-span-2 tw-btn tw-bg-white/95 tw-text-pry tw-font-medium hover:tw-bg-white/100 hover:tw-text-textColor"
-            type="button"
+            type="submit"
           >
             Submit
           </button>
-        </form>
+        </AppForm>
       </div>
     </HomeSection>
   );

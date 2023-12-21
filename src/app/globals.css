@@ -7,10 +7,9 @@
 }
 
 body {
-  font-size: 1.75rem;
+  font-size: 1.75rem !important;
 
-  @apply tw-text-textColor
-  /* tw-text-lg; */;
+  @apply tw-text-textColor;
 }
 
 @layer base {

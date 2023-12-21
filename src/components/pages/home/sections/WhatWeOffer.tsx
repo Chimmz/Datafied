@@ -34,7 +34,7 @@ const WhatWeOffer = () => {
               <Image src={service.img.src} width={450} height={200} alt="" />
               <div>
                 {/* <h4 className="tw-text-sec tw-text-4xl tw-font-openSans tw-mb-5"> */}
-                <h4 className="tw-text-pry tw-tracking-[2px] tw-font-openSans tw-uppercase tw-mb-9">
+                <h4 className="tw-text-pry tw-tracking-[1px] tw-font-openSans tw-uppercase tw-mb-7">
                   {service.title}
                 </h4>
                 <p className="tw-leading-relaxed">{service.text}</p>

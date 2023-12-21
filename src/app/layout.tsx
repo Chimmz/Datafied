@@ -1,9 +1,12 @@
 import type { Metadata } from 'next';
-import './globals.css';
 import fonts from './fonts';
 import Image from 'next/image';
 import AppContainer from '@/components/helpers/AppContainer';
 import Link from 'next/link';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './globals.css';
+import BootstrapClient from '@/components/clients/BootstrapClient';
 
 export const metadata: Metadata = {
   title: 'Datafied',
@@ -17,8 +20,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       className={`${fonts.raleway.variable} ${fonts.rubik.variable} tw-scroll-smooth`}
     >
       <body className="tw-font-rubik">
-        {/* FFF5F0 */}
-        <nav className="tw-bg-[#FFF5F0] tw-py-3 tw-h-[14vh] tw-grid tw-place-items-center">
+        {/* FFF5F0 fff1e8*/}
+        <nav className="tw-bg-[#fff8f3] tw-py-3 tw-h-[14vh] tw-grid tw-place-items-center">
           <AppContainer className="tw-flex tw-items-center tw-justify-between">
             <Image
               src="/img/datafied-logo.png"
@@ -79,6 +82,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </ul>
           </AppContainer>
         </footer>
+
+        <BootstrapClient />
       </body>
     </html>
   );
