@@ -1,8 +1,7 @@
 'use client';
-import React, { useCallback, useEffect, useMemo, useState } from 'react';
+import React, { useCallback, useMemo, useState } from 'react';
 import HomeSection from '.';
 import { Rating as StarRating } from 'react-simple-star-rating';
-import Img from '../img/austin-distel-mpN7xjKQ_Ns-unsplash.jpg';
 import Image from 'next/image';
 import { Icon } from '@iconify/react/dist/iconify.js';
 import { testimonials } from '../../../../data/testimonials.json';
@@ -19,14 +18,9 @@ const Testimonials = () => {
     []
   );
 
-  useEffect(() => {
-    console.log(testimonies[activeTestimonyIndex!]);
-  }, [activeTestimonyIndex]);
-
   const resizeExplanation = useCallback((text: string) => {
     const words = text.split(' ');
     const hasMore = words.length > MAX_EXPLANATION_WORDS;
-
     return {
       hasMore,
       explanation: words

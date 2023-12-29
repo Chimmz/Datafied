@@ -7,11 +7,11 @@ import { Icon } from '@iconify/react/dist/iconify.js';
 import Link from 'next/link';
 
 const Header = () => {
-  /* #f7f7f7 fff3ed fff1e8*/
+  /* #f7f7f7 fff3ed fff1e8 fff8f3*/
   return (
     <HomeSection
       as="header"
-      className="tw-bg-[#fff8f3] tw-min-h-[80vh] tw-grid tw-place-items-center"
+      className="tw-bg-[#fff] tw-min-h-[80vh] tw-grid tw-place-items-center"
       containerClassName="tw-flex tw-flex-col tw-text-center tw-items-center tw-gap-20 tabPort:tw-flex-row tabPort:tw-text-left tabPort:tw-items-start"
     >
       <div className="tw-max-w-[70ch] tabPort:tw-max-w-[40ch]">
@@ -26,14 +26,20 @@ const Header = () => {
           <Link href="#services" className="tw-btn-pry">
             Explore more
           </Link>
-          <button className="tw-btn tw-gap-1 tw-bg-white tw-text-pry tw-border tw-border-transparent hover:tw-border-pry hover:tw-text-pry">
+          {/* <Link
+            href="/academy"
+            className="tw-btn tw-gap-1 tw-bg-white tw-text-pry tw-border tw-border-transparent hover:tw-border-pry hover:tw-text-pry"
+          >
             Datafied Academy
             <Icon icon="system-uicons:arrow-right" width={22} />
-          </button>
-          {/* <button className="tw-btn tw-gap-1 tw-border tw-border-[#a8a8a8] hover:tw-border-pry hover:tw-text-pry">
+          </Link> */}
+          <Link
+            href="/academy"
+            className="tw-btn tw-gap-1 tw-border tw-border-[#d6d6d6] hover:tw-border-pry hover:tw-text-pry"
+          >
             Datafied Academy
             <Icon icon="system-uicons:arrow-right" width={22} />
-          </button> */}
+          </Link>
         </div>
       </div>
 

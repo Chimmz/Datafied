@@ -8,10 +8,12 @@ export default function Home() {
   return (
     <>
       <Header />
-      <About />
-      <WhatWeOffer />
-      <Testimonials />
-      <Contact />
+      <main>
+        <About />
+        <WhatWeOffer />
+        <Testimonials />
+        <Contact />
+      </main>
     </>
   );
 }

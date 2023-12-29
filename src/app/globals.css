@@ -9,7 +9,7 @@
 body {
   font-size: 1.75rem !important;
 
-  @apply tw-text-textColor;
+  /* @apply tw-text-textColor; */
 }
 
 @layer base {
