@@ -1,15 +1,15 @@
 'use client';
 import React from 'react';
-import HomeSection from '.';
 import Img1 from '../img/austin-distel-mpN7xjKQ_Ns-unsplash.jpg';
 import Img2 from '../img/erik-brolin-ZARfCYDaVg0-unsplash.jpg';
 import { Icon } from '@iconify/react/dist/iconify.js';
 import Link from 'next/link';
+import Section from '@/components/helpers/Section';
 
 const Header = () => {
   /* #f7f7f7 fff3ed fff1e8 fff8f3*/
   return (
-    <HomeSection
+    <Section
       as="header"
       className="tw-bg-[#fff] tw-min-h-[80vh] tw-grid tw-place-items-center"
       containerClassName="tw-flex tw-flex-col tw-text-center tw-items-center tw-gap-20 tabPort:tw-flex-row tabPort:tw-text-left tabPort:tw-items-start"
@@ -60,7 +60,7 @@ const Header = () => {
           alt=""
         />
       </figure>
-    </HomeSection>
+    </Section>
   );
 };
 

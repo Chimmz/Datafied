@@ -38,7 +38,9 @@ const config: Config = {
       colors: {
         pry: '#E95E10',
         pryDark: '#D04E04',
-        sec: '#185983',
+        sec: '#166CA3',
+        // sec: '#185983',
+        secDark: '#08324E',
         textColor: '#5f5f5f'
       }
     }

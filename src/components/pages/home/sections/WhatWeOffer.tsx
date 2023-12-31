@@ -1,13 +1,13 @@
 import React from 'react';
 
 import cls from 'classnames';
-import HomeSection from '.';
 import Image from 'next/image';
 import { services } from '../config';
+import Section from '@/components/helpers/Section';
 
 const WhatWeOffer = () => {
   return (
-    <HomeSection
+    <Section
       id="services"
       title={
         <>
@@ -43,7 +43,7 @@ const WhatWeOffer = () => {
           );
         })}
       </ul>
-    </HomeSection>
+    </Section>
   );
 };
 

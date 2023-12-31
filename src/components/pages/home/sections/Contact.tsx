@@ -1,14 +1,14 @@
 'use client';
 import React, { FormEventHandler } from 'react';
-import HomeSection from '.';
 import Image from 'next/image';
 import AppForm from '@/components/clients/AppForm';
+import Section from '@/components/helpers/Section';
 
 const Contact = function () {
   const sendMessage = () => {};
 
   return (
-    <HomeSection title="Have a Message for Us?">
+    <Section title="Have a Message for Us?" id="contact">
       <div className="tw-shadow-xl tw-flex tw-flex-col md:tw-flex-row tw-rounded-3xl tw-overflow-hidden tw-max-w-4x tw-mx-auto">
         <figure className="tw-hidden md:tw-flex-center tw-bg-[#f8f8f8] tw-flex-1">
           <Image
@@ -59,7 +59,7 @@ const Contact = function () {
           </button>
         </AppForm>
       </div>
-    </HomeSection>
+    </Section>
   );
 };
 

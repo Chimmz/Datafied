@@ -1,12 +1,12 @@
 'use client';
 import React, { useCallback, useMemo, useState } from 'react';
-import HomeSection from '.';
 import { Rating as StarRating } from 'react-simple-star-rating';
 import Image from 'next/image';
 import { Icon } from '@iconify/react/dist/iconify.js';
 import { testimonials } from '../../../../data/testimonials.json';
 import { Modal } from 'react-bootstrap';
 import cls from 'classnames';
+import Section from '@/components/helpers/Section';
 
 const MAX_EXPLANATION_WORDS = 30;
 
@@ -31,7 +31,7 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <HomeSection title="What People Say About Us" className="tw-bg-[#f5f5f5]">
+    <Section title="What People Say About Us" className="tw-bg-[#f5f5f5]">
       <ul className="tw-flex tw-flex-wrap tw-justify-center tw-gap-8">
         {testimonies.map((testimony, index) => {
           const { explanation, hasMore } = resizeExplanation(testimony.explanation);
@@ -141,7 +141,7 @@ const Testimonials = () => {
           </button>
         </Modal.Footer>
       </Modal>
-    </HomeSection>
+    </Section>
   );
 };
 

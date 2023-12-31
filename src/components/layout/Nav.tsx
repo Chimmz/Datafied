@@ -2,6 +2,7 @@ import Image from 'next/image';
 import AppContainer from '../helpers/AppContainer';
 import Link from 'next/link';
 
+/* FFF5F0 fff1e8 fff8f3*/
 const Nav = function () {
   return (
     <nav className="tw-bg-[#fff] tw-py-3 tw-h-[14vh] tw-grid tw-place-items-center">

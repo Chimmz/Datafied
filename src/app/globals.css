@@ -24,15 +24,21 @@ body {
 
 @layer components {
   .tw-btn {
-    @apply tw-flex-center tw-min-w-fit tw-text-center tw-transition-colors tw-duration-300 tw-px-7 tw-py-4 tw-rounded-md;
+    @apply tw-flex-center tw-min-w-fit tw-px-7 tw-py-4 tw-rounded-md tw-text-center tw-transition-colors tw-duration-300;
   }
   .tw-btn-pry {
     @apply tw-btn tw-bg-pry tw-text-white hover:tw-bg-pryDark;
   }
+  .tw-btn-sec {
+    @apply tw-btn tw-bg-sec tw-text-white hover:tw-bg-secDark;
+  }
+  .tw-btn-white {
+    @apply tw-btn tw-bg-white tw-text-pry tw-border-2 tw-border-transparent hover:tw-border-white hover:tw-bg-transparent hover:tw-text-white;
+  }
   .tw-simple-link {
     @apply hover:tw-text-pry;
   }
-  .parag {
+  .tw-parag {
     /* @apply tw-leading-7 */
     line-height: 2.2em;
   }
