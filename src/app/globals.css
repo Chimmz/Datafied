@@ -2,14 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+/* tw-text-[62.5%] */
 :root {
-  font-size: 62.5%;
+  @apply tw-text-[62%];
 }
+/* phone:  */
+/* Port:  */
+/* land:  */
+/* Desktop:  */
 
 body {
-  font-size: 1.75rem !important;
-
-  /* @apply tw-text-textColor; */
+  @apply tw-text-[1.75rem];
 }
 
 @layer base {
@@ -18,7 +21,9 @@ body {
   }
   input,
   textarea {
-    @apply tw-outline-none;
+    border: none !important;
+    box-shadow: none !important;
+    @apply tw-outline-none tw-border-none focus:tw-shadow-none focus:tw-border-none;
   }
 }
 
@@ -48,7 +53,7 @@ body {
   .tw-flex-center {
     @apply tw-flex tw-items-center tw-justify-center;
   }
-  /* .contact-bg-image {
-    backgroundImage: 
-  } */
+  .tw-u-mobile-text-left {
+    @apply tw-text-left md:tw-text-center;
+  }
 }

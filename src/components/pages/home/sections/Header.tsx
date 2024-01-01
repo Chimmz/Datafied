@@ -14,7 +14,7 @@ const Header = () => {
       className="tw-bg-[#fff] tw-min-h-[80vh] tw-grid tw-place-items-center"
       containerClassName="tw-flex tw-flex-col tw-text-center tw-items-center tw-gap-20 tabPort:tw-flex-row tabPort:tw-text-left tabPort:tw-items-start"
     >
-      <div className="tw-max-w-[70ch] tabPort:tw-max-w-[40ch]">
+      <div className="tw-max-w-[30ch] tabPort:tw-max-w-[40ch]">
         <h1 className="tw-font-raleway tw-font-light tw-text-7xl tabPort:tw-text-8xl tw-text-sec tw-mb-16">
           <span className="tw-text-pry tw-uppercase tw-text-[20px] tw-font-bold tw-block tw-mb-8 tabPort:tw-mb-4">
             Datafied:

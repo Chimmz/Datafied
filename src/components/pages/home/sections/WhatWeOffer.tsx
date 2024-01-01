@@ -25,19 +25,26 @@ const WhatWeOffer = () => {
           const needsTopSpace = [2, 3, 4, 5];
           return (
             <li
+              key={service.title}
               className={cls(
                 'tw-flex tw-flex-col md:tw-flex-row tw-items-center tw-gap-5 tabLand:tw-gap-14 tw-text-center md:tw-text-left',
                 shouldReverse && 'tw-flex-col md:tw-flex-row-reverse',
                 needsTopSpace.includes(i) && 'tw-mt-14'
               )}
             >
-              <Image src={service.img.src} width={450} height={200} alt="" />
+              <Image
+                src={service.img.src}
+                width={450}
+                height={200}
+                alt=""
+                className="tw-w-[30rem] tw-h-[30rem] tw-object-cover"
+              />
               <div>
                 {/* <h4 className="tw-text-sec tw-text-4xl tw-font-openSans tw-mb-5"> */}
                 <h4 className="tw-text-pry tw-tracking-[1px] tw-font-openSans tw-uppercase tw-mb-7">
                   {service.title}
                 </h4>
-                <p className="tw-leading-relaxed">{service.text}</p>
+                <p className="tw-max-w-[50ch] tw-leading-relaxed">{service.text}</p>
               </div>
             </li>
           );

@@ -26,7 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Nav />
 
         {children}
-        <Contact />
+        {/* <Contact /> */}
         <Footer />
         <BootstrapClient />
       </body>

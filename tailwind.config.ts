@@ -37,6 +37,7 @@ const config: Config = {
       },
       colors: {
         pry: '#E95E10',
+        pryLight: '#FFF3EC',
         pryDark: '#D04E04',
         sec: '#166CA3',
         // sec: '#185983',

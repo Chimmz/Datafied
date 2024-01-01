@@ -42,11 +42,14 @@ const Testimonials = () => {
               className="tw-relative tw-mt-36 tw-shadow-lg tw-flex tw-flex-col tw-items-center tw-text-center tw-bg-white tw-rounded-xl tw-p-10 tw-pt-20 tw-min-w-[350px] tw-max-w-[400px]"
             >
               <Image
-                src="/img/restaurant.jpg"
+                src={`/img/testimonials/${testimony.username}.jpg`}
                 width={130}
                 height={130}
-                alt="Austin's avatar photo"
-                className="tw-w-36 tw-h-36 tw-object-cover tw-absolute tw-left-1/2 tw-top-0 -tw-translate-x-1/2 -tw-translate-y-1/2 tw-inline-block tw-rounded-full tw-ring-8 tw-ring-white"
+                alt={`Datafied's testifier: ${testimony.username} picture avatar`}
+                className={cls(
+                  `tw-object-${testimony.pictureAdjust}`,
+                  'tw-w-36 tw-h-36 tw-object-cover tw-absolute tw-left-1/2 tw-top-0 -tw-translate-x-1/2 -tw-translate-y-1/2 tw-inline-block tw-rounded-full tw-ring-8 tw-ring-white'
+                )}
               />
               <small className="tw-block tw-mb-10 tw-opacity-70 tw-uppercase">
                 {testimony.username}
@@ -137,7 +140,7 @@ const Testimonials = () => {
             className="tw-w-full tw-simple-link tw-py-8"
             onClick={setActiveTestimonyIndex.bind(null, undefined)}
           >
-            Close
+            CLOSE
           </button>
         </Modal.Footer>
       </Modal>

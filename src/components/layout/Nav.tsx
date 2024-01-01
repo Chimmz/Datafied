@@ -17,16 +17,17 @@ const Nav = function () {
         </Link>
         <ul className="tw-flex tw-items-center tw-gap-12">
           <li>
-            <Link
-              href="/blog"
+            <a
+              href="https://www.datafied.tech"
+              target="_blank"
               className="hover:tw-text-pry tw-transition-colors duration-200"
             >
               Blog
-            </Link>
+            </a>
           </li>
           <li>
             <Link
-              href="/blog"
+              href="/#services"
               className="hover:tw-text-pry tw-transition-colors duration-200"
             >
               Our services
