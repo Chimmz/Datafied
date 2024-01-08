@@ -3,7 +3,7 @@ import React, { useCallback, useMemo, useState } from 'react';
 import { Rating as StarRating } from 'react-simple-star-rating';
 import Image from 'next/image';
 import { Icon } from '@iconify/react/dist/iconify.js';
-import { testimonials } from '../../../../data/testimonials.json';
+import TESTIMONIES from '../../../../data/testimonials-data';
 import { Modal } from 'react-bootstrap';
 import cls from 'classnames';
 import Section from '@/components/helpers/Section';
@@ -14,7 +14,7 @@ const Testimonials = () => {
   const [activeTestimonyIndex, setActiveTestimonyIndex] = useState<number | undefined>();
 
   const testimonies = useMemo(
-    () => testimonials.sort((prev, next) => next.rating - prev.rating),
+    () => TESTIMONIES.sort((prev, next) => next.rating - prev.rating),
     []
   );
 

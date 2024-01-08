@@ -7,7 +7,7 @@ import { useSearchParams } from 'next/navigation';
 import React, { ChangeEventHandler, useMemo, useState } from 'react';
 import { Form } from 'react-bootstrap';
 import Accordion from 'react-bootstrap/Accordion';
-import { courses } from '../../../data/courses.json';
+import COURSES from '../../../data/courses';
 import { toTitleCase } from '@/utils/string-utils';
 
 const metadata: Metadata = {
@@ -38,7 +38,7 @@ const CoursePreviewPage: NextPage<Props> = function (props) {
     return 'beginner';
   });
 
-  const course = useMemo(() => courses.find(c => c.level === level), [level]);
+  const course = useMemo(() => COURSES.find(c => c.level === level), [level]);
 
   const handleChangeLevel: ChangeEventHandler<HTMLSelectElement> = ev => {
     setLevel(ev.target.value as Level);
@@ -61,13 +61,7 @@ const CoursePreviewPage: NextPage<Props> = function (props) {
 
       <AppContainer className="phone: tw-shadow-lg tw-bg-white -tw-translate-y-[9rem] tw-z-[5] tw-relative">
         <Section className="tw-p-10 tw-px-2 tabPort:tw-p-24" paddingBlock={false}>
-          <p className="tw-parag tw-mb-20">
-            The Beginners Data Analytics course is designed to provide participants with a
-            solid foundation in the field of data analytics. Throughout the 4-month
-            program, you will gain essential skills and knowledge in various fundamental
-            areas of data analysis, enabling you to kickstart your journey in the world of
-            data-driven decision-making.
-          </p>
+          <p className="tw-parag tw-mb-20">{course?.overview}</p>
           <h4 className="tw-font-semibold tw-mb-9">What You Will Learn</h4>
           <ul className="tw-flex tw-flex-col tw-gap-5">
             {WHAT_YOU_LEARN.map(item => (
@@ -89,7 +83,7 @@ const CoursePreviewPage: NextPage<Props> = function (props) {
             className="tw-text-[17px] tw-max-w-[120px] tw-bg-gray-50 tw-border-gray-100 focus:tw-shadow-none tw-cursor-pointer tw-duration-100"
             onChange={handleChangeLevel}
           >
-            {courses.map(c => (
+            {COURSES.map(c => (
               <option key={c.level} value={c.level}>
                 {toTitleCase(c.level)}
               </option>
