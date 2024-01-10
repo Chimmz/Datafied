@@ -5,7 +5,7 @@ import Link from 'next/link';
 /* FFF5F0 fff1e8 fff8f3*/
 const Nav = function () {
   return (
-    <nav className="tw-bg-[#fff] tw-py-3 tw-h-[14vh] tw-grid tw-place-items-center">
+    <nav className="tw-h-[14vh] tw-grid tw-place-items-center tw-bg-[#fff] tw-p-4 md:tw-px-0">
       <AppContainer className="tw-flex tw-items-center tw-justify-between">
         <Link href="/">
           <Image

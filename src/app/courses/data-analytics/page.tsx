@@ -52,7 +52,7 @@ const CoursePreviewPage: NextPage<Props> = function (props) {
           className="tw-w-full tw-h-full tw-absolute tw-inset-0 tw-object-cover"
           alt=""
         />
-        <h2 className="tw-w-full tw-h-full tw-flex-center tw-bg-black/[.55] tw-text-6xl tabLand:tw-text-7xl tw-text-[#F6BE9E] tw-font-semibold tw-text-center tw-z-[3]">
+        <h2 className="tw-w-full tw-h-full tw-flex-center tw-bg-black/[.55] tw-text-[#F6BE9E]/95 tw-text-6xl tabLand:tw-text-7xl tw-font-semibold tw-text-center tw-z-[3]">
           <span className="-tw-translate-y-[3rem] tw-max-w-[20ch] tw-font-raleway">
             Data Analytics
           </span>
@@ -77,7 +77,7 @@ const CoursePreviewPage: NextPage<Props> = function (props) {
       </AppContainer>
 
       <AppContainer>
-        <div className="tw-bg-[#fff] tw-border tw-flex tw-items-center tw-gap-5 tw-p-10 tw-px-12 tw-rounded-lg">
+        <div className="tw-bg-[#fff] tw-border tw-border-gray-400 tw-flex tw-items-center tw-gap-5 tw-p-10 tw-px-12 tw-rounded-lg">
           Data Analytics course level:
           <Form.Select
             className="tw-text-[17px] tw-max-w-[120px] tw-bg-gray-50 tw-border-gray-100 focus:tw-shadow-none tw-cursor-pointer tw-duration-100"
@@ -138,7 +138,7 @@ const CoursePreviewPage: NextPage<Props> = function (props) {
             <a
               href="https://wa.me/+2347013623317"
               target="_blank"
-              className="tw-btn sm:tw-w-max tw-border tw-border-[transparent] hover:tw-border-[#19DC5B] tw-bg-[#fff] tw-text-[#19DC5B] hover:tw-text-[#49be70] tw-gap-3"
+              className="tw-btn tw-btn-sm sm:tw-w-max tw-border tw-border-[transparent] hover:tw-border-[#19DC5B] tw-bg-[#fff] tw-text-[#19DC5B] hover:tw-text-[#49be70] tw-gap-3"
             >
               <Icon icon="mdi:whatsapp" width={22} color="#19DC5B" /> Chat with us
             </a>

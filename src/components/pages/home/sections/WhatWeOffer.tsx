@@ -27,8 +27,8 @@ const WhatWeOffer = () => {
             <li
               key={service.title}
               className={cls(
-                'tw-flex tw-flex-col md:tw-flex-row tw-items-center tw-gap-5 tabLand:tw-gap-14 tw-text-center md:tw-text-left',
-                shouldReverse && 'tw-flex-col md:tw-flex-row-reverse',
+                'tw-flex tw-flex-col md:tw-flex-row tw-items-center tw-justify-between tw-gap-5 tabLand:tw-gap-14 tw-text-center md:tw-text-left',
+                shouldReverse && 'md:tw-flex-row-reverse',
                 needsTopSpace.includes(i) && 'tw-mt-14'
               )}
             >

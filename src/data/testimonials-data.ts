@@ -34,7 +34,7 @@ export default [
     explanation:
       "So I have tried learning Data Analytics FOUR TIMES and to be honest a combination of my lack of dedication and the difficulty in getting hands-on learning experience was a reason I had that high number of trials. But you know what the Bible says about the righteous and seven times, yeah? This is my fifth attempt and I can say that it's my best too. One thing that stands out for me with Datafied is that HANDS-ON EXPERIENCE. I'm miles away and calling Clara at 3/4 am her time and she's available. Thank you, guys. This was money well spent!",
     rating: 5,
-    pictureAdjust: 'top'
+    picturePosition: 'top'
   },
   {
     username: 'Koketso',
@@ -51,7 +51,7 @@ export default [
     explanation:
       "I am having an amazing experience in the field of Data Analytics, starting from zero tech knowledge and becoming proficient in Excel, Power BI, calculating measures, and creating visuals and dashboards. The tutors, namely Clara, Nnamdi, Bariyat, and Praise, are playing a crucial role in my learning journey. I am grateful for the tutors' support, availability, and impactful teaching. I highly recommend Datafied as a platform for learning Data Analytics for everyone. Overall, the experience is transformative and rewarding.",
     rating: 5,
-    pictureAdjust: 'left-top'
+    picturePosition: 'left-top'
   },
   {
     username: 'Esther',
@@ -59,7 +59,7 @@ export default [
     explanation:
       "Connecting with Datafied has been a privilege, yeah! It paves the way and ensures that all aspirant Titans who aspire to become professionals in their respective disciplines have a solid foundation. I can't quantify the energy, zeal, and passion the facilitators put into making sure everyone is carried along without leaving anyone behind. The beautiful aspect is having access to call our facilitators when stuck while learning on your own or practicing. It is what makes the money you paid unquantifiable. Learning is continuous for me; it has been a journey of mixed feelings, though I gladly embrace it with an atmosphere of learning for myself. I can't wait to become a Pro in SQL!",
     rating: 5,
-    pictureAdjust: 'right'
+    picturePosition: 'right'
   },
   {
     username: 'Joshua',
@@ -74,7 +74,7 @@ export default [
     explanation:
       "My journey into the world of data analysis began about two years ago and having enrolled for the program with two different academies at different times, I gave up each time. I struggled to grasp the concepts and actually thought I was unteachable. Alas, I realized the problem when I joined Datafied. I wasn't unteachable. The problem was the teaching methods used in other programs. With Datafied, concepts are simplified and teachers are ALWAYS available. If you think you have a coconut head, come to Datafied. Our facilitators are patient and they go above and beyond to ensure that students are reached at whatever level they are. With three weekly sessions and constant follow up, they make learning easy and relatable. I have no regrets being with them and I am always eager to recommend them to anyone who cares to know",
     rating: 5,
-    pictureAdjust: 'left'
+    picturePosition: 'left'
   },
   {
     username: 'Ezekiel',

@@ -31,7 +31,7 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <Section title="What People Say About Us" className="tw-bg-[#f5f5f5]">
+    <Section title="What People Say About Us" className="tw-bg-[#fff]">
       <ul className="tw-flex tw-flex-wrap tw-justify-center tw-gap-8">
         {testimonies.map((testimony, index) => {
           const { explanation, hasMore } = resizeExplanation(testimony.explanation);
@@ -47,7 +47,7 @@ const Testimonials = () => {
                 height={130}
                 alt={`Datafied's testifier: ${testimony.username} picture avatar`}
                 className={cls(
-                  `tw-object-${testimony.pictureAdjust}`,
+                  `tw-object-${testimony.picturePosition}`,
                   'tw-w-36 tw-h-36 tw-object-cover tw-absolute tw-left-1/2 tw-top-0 -tw-translate-x-1/2 -tw-translate-y-1/2 tw-inline-block tw-rounded-full tw-ring-8 tw-ring-white'
                 )}
               />

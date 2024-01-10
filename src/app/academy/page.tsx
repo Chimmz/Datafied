@@ -1,5 +1,7 @@
 import AppContainer from '@/components/helpers/AppContainer';
 import Section from '@/components/helpers/Section';
+import Testimonials from '@/components/pages/academy/sections/Testimonials';
+import TestimonialsSlider from '@/components/pages/academy/sections/TestimonialsSlider';
 import cls from 'classnames';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -28,7 +30,7 @@ const AcademyPage = function () {
           className="tw-w-full tw-h-full tw-absolute tw-inset-0 tw-object-cover"
           alt=""
         />
-        <h2 className="tw-w-full tw-h-full tw-px-10 tw-flex-center tw-bg-black/[.55] tw-text-6xl tabLand:tw-text-7xl tw-text-[#3DCBFF] tw-font-semibold tw-text-center tw-z-10">
+        <h2 className="tw-w-full tw-h-full tw-text-[#3DCBFF]/[.8] tw-px-10 tw-flex-center tw-bg-black/[.55] tw-text-6xl tabLand:tw-text-7xl tw-font-semibold tw-text-center tw-z-10">
           <span className="tw-max-w-[20ch]">
             Simplify your journey as you start your tech career!
           </span>
@@ -65,7 +67,10 @@ const AcademyPage = function () {
               ))}
             </ul>
           </Section>
-          <div className="tw-flex tw-flex-col tabPort:tw-flex-row tw-items-center tw-justify-between tw-gap-14 tabPort:tw-gap-3 tw-text-center tabPort:tw-text-left tw-bg-pry tw-rounded-3xl tw-text-white tw-px-8 tw-py-24 md:tw-p-20">
+
+          <TestimonialsSlider />
+
+          <div className="tw-my-20 tw-flex tw-flex-col tabPort:tw-flex-row tw-items-center tw-justify-between tw-gap-14 tabPort:tw-gap-3 tw-text-center tabPort:tw-text-left tw-bg-pry tw-rounded-3xl tw-text-white tw-px-8 tw-py-24 md:tw-p-20">
             <p className="tw-text-6xl tw-parag tw-max-w-max tabPort:tw-max-w-[25ch] tw-font-raleway">
               Empower your decision-making with our expert-led Data Analytics courses.
             </p>

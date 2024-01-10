@@ -34,6 +34,9 @@ body {
   .tw-btn-pry {
     @apply tw-btn tw-bg-pry tw-text-white hover:tw-bg-pryDark;
   }
+  .tw-btn-sm {
+    @apply tw-px-4 tw-py-3 tw-text-[1.5rem];
+  }
   .tw-btn-sec {
     @apply tw-btn tw-bg-sec tw-text-white hover:tw-bg-secDark;
   }
@@ -47,6 +50,9 @@ body {
     /* @apply tw-leading-7 */
     line-height: 2.2em;
   }
+  .tw-comp-circle {
+    @apply tw-rounded-full tw-grid tw-place-items-center;
+  }
 }
 
 @layer utilities {
@@ -55,5 +61,19 @@ body {
   }
   .tw-u-mobile-text-left {
     @apply tw-text-left md:tw-text-center;
+  }
+  .tw-u-scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+
+  .tw-u-absolute-y-center {
+    @apply tw-top-1/2;
+  }
+
+  .tw-u-absolute-orgin-left {
+    @apply tw-left-0 -tw-translate-x-1/2;
+  }
+  .tw-u-absolute-orgin-right {
+    @apply tw-right-0 tw-translate-x-1/2;
   }
 }

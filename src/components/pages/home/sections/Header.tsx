@@ -26,16 +26,9 @@ const Header = () => {
           <Link href="#services" className="tw-btn-pry">
             Explore more
           </Link>
-          {/* <Link
-            href="/academy"
-            className="tw-btn tw-gap-1 tw-bg-white tw-text-pry tw-border tw-border-transparent hover:tw-border-pry hover:tw-text-pry"
-          >
-            Datafied Academy
-            <Icon icon="system-uicons:arrow-right" width={22} />
-          </Link> */}
           <Link
             href="/academy"
-            className="tw-btn tw-gap-1 tw-border tw-border-[#d6d6d6] hover:tw-border-pry hover:tw-text-pry"
+            className="tw-btn tw-gap-1 tw-border tw-text-pry tw-border-[#d6d6d6] hover:tw-border-pry"
           >
             Datafied Academy
             <Icon icon="system-uicons:arrow-right" width={22} />
@@ -43,20 +36,20 @@ const Header = () => {
         </div>
       </div>
 
-      <figure className="tw-relative tw-borde tw-flex-1">
+      <figure className="tw-relative tw-borde tw-flex-1 -tw-translate-x-[3.5rem] tabPort:tw-translate-x-0">
         <img
           src={Img1.src}
-          className="tw-absolut tw-aspect-video tw-object-cover tw-h-52 tw-mb-32"
+          className="tw-absolut tw-ring-white tw-ring-1 tw-aspect-video tw-object-cover tw-h-52 tw-mb-32"
           alt=""
         />
         <img
           src={Img2.src}
-          className="tw-absolute tw-left-1/2 -tw-translate-x-16 tw-top-1/2 -tw-translate-y-1/2 tw-aspect-video tw-object-cover tw-h-52"
+          className="tw-absolute tw-ring-white tw-ring-1 tw-left-1/2 -tw-translate-x-16 tw-top-1/2 -tw-translate-y-1/2 tw-aspect-video tw-object-cover tw-h-52"
           alt=""
         />
         <img
           src="/img/restaurant.jpg"
-          className="tw-absolut tw-aspect-video tw-object-cover tw-h-52"
+          className="tw-relative tw-z-10 tw-ring-white tw-ring-1 tw-aspect-video tw-object-cover tw-h-52"
           alt=""
         />
       </figure>
