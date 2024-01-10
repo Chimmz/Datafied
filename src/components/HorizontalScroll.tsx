@@ -81,12 +81,12 @@ const HorizontalScroll: FC<Props> = props => {
         });
 
       // This if-statement doesnt work!
-      if (
-        direction === 'right' &&
-        scrolledAmt + containerRef.current!.clientWidth ===
-          containerRef.current!.clientWidth * 10
-      )
-        return containerRef.current?.scrollTo({ left: 0, behavior: 'smooth' });
+      // if (
+      //   direction === 'right' &&
+      //   scrolledAmt + containerRef.current!.clientWidth ===
+      //     containerRef.current!.clientWidth * 10
+      // )
+      //   return containerRef.current?.scrollTo({ left: 0, behavior: 'smooth' });
 
       const scrollBy = getScrollAmount(direction, scrolledAmt);
       containerRef.current?.scrollTo({ left: scrollBy, behavior: 'smooth' });
