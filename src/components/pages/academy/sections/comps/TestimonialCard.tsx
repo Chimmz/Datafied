@@ -80,7 +80,7 @@ const TestimonialCard: FC<Props> = testimony => {
       </h4>
 
       <blockquote
-        className={`tw-relative tw-mb-auto before:tw-absolute before:-tw-top-20 before:-tw-left-8 md:before:-tw-left-2 before:tw-content-['‟'] before:tw-text-[80px] before:tw-opacity-5`}
+        className={`tw-relative tw-mb-auto before:tw-absolute before:-tw-top-20 before:-tw-left-8 md:before:-tw-left-4 before:tw-content-['‟'] before:tw-text-[80px] before:tw-opacity-5`}
       >
         <p className="tw-text-[1.6rem]">{explanation}</p>
         <button

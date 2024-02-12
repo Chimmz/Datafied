@@ -5,6 +5,7 @@ import TestimonialsSlider from '@/components/pages/academy/sections/Testimonials
 import cls from 'classnames';
 import Image from 'next/image';
 import Link from 'next/link';
+import SignupCta from './sections/cta';
 
 const COURSES = [
   {
@@ -46,7 +47,7 @@ const AcademyPage = function () {
             you go through your journey to becoming an expert.
           </p>
           {/*  after:tw-top-full after:-tw-translate-y-1/2 after:tw-left-1/2 after:-tw-translate-x-1/2 after:tw-text-[12px] after:tw-uppercase after:tw-bg-gray-100 */}
-          <Section title="Courses" className="tw-my-40">
+          <Section title="Courses" className="tw-my-28">
             <ul className="tw-flex tw-justify-center tw-gap-8 tw-flex-wrap">
               {COURSES.map(course => (
                 <Link
@@ -68,20 +69,9 @@ const AcademyPage = function () {
             </ul>
           </Section>
 
+          <SignupCta />
           <TestimonialsSlider />
-
-          <div className="tw-my-20 tw-flex tw-flex-col tabPort:tw-flex-row tw-items-center tw-justify-between tw-gap-14 tabPort:tw-gap-3 tw-text-center tabPort:tw-text-left tw-bg-pry tw-rounded-3xl tw-text-white tw-px-8 tw-py-24 md:tw-p-20">
-            <p className="tw-text-6xl tw-parag tw-max-w-max tabPort:tw-max-w-[25ch] tw-font-raleway">
-              Empower your decision-making with our expert-led Data Analytics courses.
-            </p>
-            <a
-              href="https://bit.ly/datafied-data-analytics-registration"
-              target="_blank"
-              className="tw-btn-white  tw-rounded-full"
-            >
-              Sign up now
-            </a>
-          </div>
+          <SignupCta />
         </div>
       </Section>
     </>

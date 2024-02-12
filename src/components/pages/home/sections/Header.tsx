@@ -14,7 +14,7 @@ const Header = () => {
       className="tw-bg-[#fff] tw-min-h-[80vh] tw-grid tw-place-items-center"
       containerClassName="tw-flex tw-flex-col tw-text-center tw-items-center tw-gap-20 tabPort:tw-flex-row tabPort:tw-text-left tabPort:tw-items-start"
     >
-      <div className="tw-max-w-[30ch] tabPort:tw-max-w-[40ch]">
+      <div className="tw-max-w-[30ch] tabPort:tw-max-w-[40ch] tabPort:tw-min-w-[40ch]">
         <h1 className="tw-font-raleway tw-font-light tw-text-7xl tabPort:tw-text-8xl tw-text-sec tw-mb-16">
           <span className="tw-text-pry tw-uppercase tw-text-[20px] tw-font-bold tw-block tw-mb-8 tabPort:tw-mb-4">
             Datafied:
@@ -23,20 +23,34 @@ const Header = () => {
         </h1>
 
         <div className="tw-flex tw-flex-col phone:tw-flex-row tabPort:tw-items-center tw-justify-center tw-gap-6 tabPort:tw-justify-start">
-          <Link href="#services" className="tw-btn-pry">
-            Explore more
-          </Link>
-          <Link
-            href="/academy"
-            className="tw-btn tw-gap-1 tw-border tw-text-pry tw-border-[#d6d6d6] hover:tw-border-pry"
-          >
+          <Link href="/academy" className="tw-btn-pry">
             Datafied Academy
             <Icon icon="system-uicons:arrow-right" width={22} />
+          </Link>
+          <Link
+            href="#services"
+            className="tw-btn tw-gap-1 tw-border tw-text-pry tw-border-[#d6d6d6] hover:tw-border-pry"
+          >
+            Explore more
           </Link>
         </div>
       </div>
 
-      <figure className="tw-relative tw-borde tw-flex-1 -tw-translate-x-[3.5rem] tabPort:tw-translate-x-0">
+      <figure className="tw-grid tw-grid-cols-2 tw-grid-rows-2 tw-gap-4">
+        <img
+          src={Img1.src}
+          className="tw-col-span-1 tw-row-span-2 tw-h-full tw-block tw-object-cover tw-rounded-md"
+          alt=""
+        />
+        <img src={Img2.src} className="tw-h-full tw-object-cover tw-rounded-md" alt="" />
+        <img
+          src="/img/restaurant.jpg"
+          className="tw-h-full tw-object-cover tw-rounded-md"
+          alt=""
+        />
+      </figure>
+
+      {/* <figure className="tw-relative tw-borde tw-flex-1 -tw-translate-x-[3.5rem] tabPort:tw-translate-x-0">
         <img
           src={Img1.src}
           className="tw-absolut tw-ring-white tw-ring-1 tw-aspect-video tw-object-cover tw-h-52 tw-mb-32"
@@ -52,7 +66,7 @@ const Header = () => {
           className="tw-relative tw-z-10 tw-ring-white tw-ring-1 tw-aspect-video tw-object-cover tw-h-52"
           alt=""
         />
-      </figure>
+      </figure> */}
     </Section>
   );
 };

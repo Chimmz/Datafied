@@ -23,7 +23,7 @@ const TestimonialsSlider = () => {
     <Section title="What People Say About Us" className="tw-bg-[#fff] tw-relative">
       <ul
         ref={listRef}
-        className="tw-max-w-[70rem] tw-flex tw-gap-8 tw-mx-auto tw-borde tw-pb-16 tw-px-4 tw-overflow-x-scroll tw-u-scrollbar-none"
+        className="tw-max-w-[50rem] tw-flex tw-gap-8 tw-mx-auto tw-borde tw-pb-16 tw-px-4 tw-overflow-x-scroll tw-u-scrollbar-none"
       >
         {testimonies.map((testimony, i) => (
           <TestimonialCard
