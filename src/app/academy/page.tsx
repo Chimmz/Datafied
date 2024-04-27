@@ -1,11 +1,13 @@
+import Image from 'next/image';
+
+import cls from 'classnames';
+
+import Link from 'next/link';
+import SignupCta from './sections/cta';
 import AppContainer from '@/components/helpers/AppContainer';
 import Section from '@/components/helpers/Section';
 import Testimonials from '@/components/pages/academy/sections/Testimonials';
 import TestimonialsSlider from '@/components/pages/academy/sections/TestimonialsSlider';
-import cls from 'classnames';
-import Image from 'next/image';
-import Link from 'next/link';
-import SignupCta from './sections/cta';
 
 const COURSES = [
   {
@@ -31,7 +33,7 @@ const AcademyPage = function () {
           className="tw-w-full tw-h-full tw-absolute tw-inset-0 tw-object-cover"
           alt=""
         />
-        <h2 className="tw-w-full tw-h-full tw-text-[#3DCBFF]/[.8] tw-px-10 tw-flex-center tw-bg-black/[.55] tw-text-6xl tabLand:tw-text-7xl tw-font-semibold tw-text-center tw-z-10">
+        <h2 className="tw-w-full tw-h-full tw-text-[#3DCBFF]/[.9] tw-px-10 tw-flex-center tw-bg-black/[.55] tw-text-6xl tabLand:tw-text-7xl tw-font-semibold tw-text-center tw-z-10">
           <span className="tw-max-w-[20ch]">
             Simplify your journey as you start your tech career!
           </span>

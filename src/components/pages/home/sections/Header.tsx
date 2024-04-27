@@ -15,10 +15,10 @@ const Header = () => {
       containerClassName="tw-flex tw-flex-col tw-text-center tw-items-center tw-gap-20 tabPort:tw-flex-row tabPort:tw-text-left tabPort:tw-items-start"
     >
       <div className="tw-max-w-[30ch] tabPort:tw-max-w-[40ch] tabPort:tw-min-w-[40ch]">
-        <h1 className="tw-font-raleway tw-font-light tw-text-7xl tabPort:tw-text-8xl tw-text-sec tw-mb-16">
-          <span className="tw-text-pry tw-uppercase tw-text-[20px] tw-font-bold tw-block tw-mb-8 tabPort:tw-mb-4">
+        <h1 className="tw-font-raleway tw-text-7xl tabPort:tw-text-8xl tw-text-sec tw-mb-16">
+          {/* <span className="tw-text-pry tw-uppercase tw-text-[20px] tw-font-bold tw-block tw-mb-8 tabPort:tw-mb-4">
             Datafied:
-          </span>
+          </span> */}
           Simplified data solutions in a data-driven era.
         </h1>
 
@@ -29,7 +29,7 @@ const Header = () => {
           </Link>
           <Link
             href="#services"
-            className="tw-btn tw-gap-1 tw-border tw-text-pry tw-border-[#d6d6d6] hover:tw-border-pry"
+            className="tw-btn tw-gap-1 tw-border tw-text-pry tw-border-pry hover:tw-bg-pryLight"
           >
             Explore more
           </Link>

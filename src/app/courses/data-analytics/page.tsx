@@ -28,13 +28,15 @@ const WHAT_YOU_LEARN = [
 
 interface Props {
   searchParams: {
-    level?: Level;
+    level?: Level | undefined;
   };
 }
 
 const CoursePreviewPage: NextPage<Props> = function (props) {
   const [level, setLevel] = useState<Level>(() => {
-    if (LEVELS.includes(props.searchParams.level!)) return props.searchParams.level!;
+    if ('level' in props.searchParams && LEVELS.includes(props.searchParams.level!))
+      return props.searchParams.level!;
+
     return 'beginner';
   });
 
@@ -106,7 +108,9 @@ const CoursePreviewPage: NextPage<Props> = function (props) {
                   return (
                     <Accordion.Item eventKey={Math.random().toString()} key={i}>
                       <Accordion.Header className="tw-border-none tw-bg-none hover:tw-bg-gray-50 tw-duration-100 tw-shadow-none">
-                        <span className="tw-text-sec tw-text-[17px]">{topicName}</span>
+                        <span className="tw-text-sec tw-text-[17px] tw-p-3">
+                          {topicName}
+                        </span>
                       </Accordion.Header>
                       <Accordion.Body>{description}</Accordion.Body>
                     </Accordion.Item>

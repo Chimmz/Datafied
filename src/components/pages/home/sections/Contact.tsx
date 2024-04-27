@@ -16,37 +16,6 @@ const Contact = function () {
     response: emailResponse
   } = useRequest<EmailJSResponseStatus | undefined>();
 
-  // const {
-  //   inputValue: firstname,
-  //   onChange: handleChangeFirstname,
-  //   validationErrors: firstnameValidationErrors,
-  //   runValidators: runFirstnameValidators,
-  //   clearInput: clearFirstname
-  // } = useInput({ init: '', validators: [{ fn: isRequired, params: [] }] });
-
-  // const {
-  //   inputValue: lastname,
-  //   validationErrors: lastnameValidationErrors,
-  //   onChange: handleChangelLastname,
-  //   runValidators: runlLastnameValidators,
-  //   clearInput: clearlLastname
-  // } = useInput({ init: '', validators: [] });
-
-  // const {
-  //   inputValue: email,
-  //   validationErrors: emailValidationErrors,
-  //   onChange: handleChangeEmail,
-  //   runValidators: runEmailValidators,
-  //   clearInput: clearEmail
-  // } = useInput({ init: '', validators: [{ fn: isRequired, params: [] }] });
-
-  // const {
-  //   inputValue: message,
-  //   validationErrors: messageValidationErrors,
-  //   onChange: handleChangeMessage,
-  //   runValidators: runMessageValidators,
-  //   clearInput: clearMessage
-  // } = useInput({ init: '', validators: [{ fn: isRequired, params: [] }] });
   const firstname = useInput({ init: '', validators: [{ fn: isRequired, params: [] }] });
   const lastName = useInput({ init: '', validators: [] });
   const email = useInput({ init: '', validators: [{ fn: isRequired, params: [] }] });

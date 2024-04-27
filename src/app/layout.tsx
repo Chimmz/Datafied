@@ -10,6 +10,8 @@ import BootstrapClient from '@/components/clients/BootstrapClient';
 import Nav from '@/components/layout/Nav';
 import Footer from '@/components/layout/Footer';
 import Contact from '@/components/pages/home/sections/Contact';
+import { Icon } from '@iconify/react/dist/iconify.js';
+import ChatWithUs from '@/components/ChatWithUs';
 
 export const metadata: Metadata = {
   title: 'Datafied',
@@ -20,7 +22,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html
       lang="en"
-      className={`${fonts.raleway.variable} ${fonts.rubik.variable} tw-scroll-smooth`}
+      className={`${fonts.raleway.variable} ${fonts.rubik.variable} ${fonts.poppins.variable} tw-scroll-smooth`}
     >
       <body className="tw-font-rubik tw-text-textColor tw-min-h-screen tw-flex tw-flex-col">
         <Nav />
@@ -29,6 +31,8 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
         {/* <Contact /> */}
         <Footer />
         <BootstrapClient />
+
+        <ChatWithUs />
       </body>
     </html>
   );

@@ -41,7 +41,7 @@ const WhatWeOffer = () => {
               />
               <div>
                 {/* <h4 className="tw-text-sec tw-text-4xl tw-font-openSans tw-mb-5"> */}
-                <h4 className="tw-text-pry tw-tracking-[1px] tw-font-openSans tw-uppercase tw-mb-7">
+                <h4 className="tw-text-pry tw-tracking-[1px] tw-font-rubik tw-uppercase tw-mb-7">
                   {service.title}
                 </h4>
                 <p className="tw-max-w-[50ch] tw-leading-relaxed">{service.text}</p>

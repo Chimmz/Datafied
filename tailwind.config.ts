@@ -22,7 +22,8 @@ const config: Config = {
     fontFamily: {
       raleway: ['var(--font-raleway)', 'sans-serif'],
       rubik: ['var(--font-rubik)', 'sans-serif'],
-      openSans: ['var(--font-openSans)', 'sans-serif']
+      openSans: ['var(--font-openSans)', 'sans-serif'],
+      poppins: ['var(--font-poppins)', 'sans-serif']
     },
     extend: {
       container: {
